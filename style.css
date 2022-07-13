@@ -58,6 +58,6 @@ span {
   border-color: orange;
 }
 
-#api-input{
+#api-input:invalid{
   
 }
