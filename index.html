@@ -10,10 +10,10 @@
     <div class="container">
       <main>
         <fieldset id="fieldset-main" class="fieldset-grp">
-          <legend id="legend-main">Movie Lookup Site</legend>
+          <legend id="legend-main">Movie Lookup</legend>
           <form method="POST" class="form">
             <label for="api_key"
-              >API Key:
+              >API Key: <span>(required)</span>
               <input
                 type="text"
                 name="api_key"
@@ -22,9 +22,10 @@
                 required
               />
             </label>
+            <!-- <span id="api-required">Enter API Key here</span> -->
 
             <label for="title"
-              >Title:
+              >Title: <span>(required)</span>
               <input
                 type="text"
                 name="title"
@@ -33,14 +34,16 @@
                 required
               />
             </label>
+            <!-- <span id="title-required"></span> -->
 
             <label for="year">
               Year:
               <input type="number" name="year" id="year" class="input-grp" />
             </label>
+            <!-- <span id=""></span> -->
 
             <fieldset id="fieldset-plot" class="fieldset-grp">
-              <legend>Choose Which Plot Version</legend>
+              <legend>Choose Which Plot Version (required)</legend>
               <label for="short">
                 Short Plot:
                 <input
@@ -63,6 +66,8 @@
                 />
               </label>
             </fieldset>
+
+            <button id="btn">Submit</button>
           </form>
         </fieldset>
       </main>

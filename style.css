@@ -24,6 +24,9 @@
   background-color: whitesmoke;
 }
 
+#api_key {
+}
+
 #legend-main {
   font-size: 2em;
 }
@@ -39,4 +42,22 @@ label {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+}
+
+span {
+  font-size: 15px;
+}
+
+#btn {
+  width: 125px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+#btn:hover {
+  border-color: orange;
+}
+
+#api-input{
+  
 }
