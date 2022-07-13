@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build a Movie Lookup Site</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <fieldset id="fieldset-main" class="fieldset-grp">
+          <legend id="legend-main">Movie Lookup Site</legend>
+          <form method="POST" class="form">
+            <label for="api_key"
+              >API Key:
+              <input
+                type="text"
+                name="api_key"
+                id="api_key"
+                class="input-grp"
+                required
+              />
+            </label>
+
+            <label for="title"
+              >Title:
+              <input
+                type="text"
+                name="title"
+                id="title"
+                class="input-grp"
+                required
+              />
+            </label>
+
+            <label for="year">
+              Year:
+              <input type="number" name="year" id="year" class="input-grp" />
+            </label>
+
+            <fieldset id="fieldset-plot" class="fieldset-grp">
+              <legend>Choose Which Plot Version</legend>
+              <label for="short">
+                Short Plot:
+                <input
+                  type="radio"
+                  value="short"
+                  id="short"
+                  name="plot_choice"
+                  required
+                />
+              </label>
+
+              <label for="long">
+                Long Plot:
+                <input
+                  type="radio"
+                  value="long"
+                  id="long"
+                  name="plot_choice"
+                  required
+                />
+              </label>
+            </fieldset>
+          </form>
+        </fieldset>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
