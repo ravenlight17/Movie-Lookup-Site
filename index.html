@@ -11,7 +11,12 @@
       <main>
         <fieldset id="fieldset-main" class="fieldset-grp">
           <legend id="legend-main">Movie Lookup</legend>
-          <form method="POST" class="form">
+          <form
+            method="GET"
+            class="form"
+            action="formResults.html"
+            target="_blank"
+          >
             <label for="api_key"
               >API Key: <span>(required)</span>
               <input
@@ -22,7 +27,6 @@
                 required
               />
             </label>
-            <!-- <span id="api-required">Enter API Key here</span> -->
 
             <label for="title"
               >Title: <span>(required)</span>
@@ -34,13 +38,19 @@
                 required
               />
             </label>
-            <!-- <span id="title-required"></span> -->
 
             <label for="year">
               Year:
-              <input type="number" name="year" id="year" class="input-grp" />
+              <input
+                type="number"
+                name="year"
+                id="year"
+                class="input-grp"
+                min="1932"
+                max="2022"
+              />
             </label>
-            <!-- <span id=""></span> -->
+            <span>Select year between 1932 and 2022</span>
 
             <fieldset id="fieldset-plot" class="fieldset-grp">
               <legend>Choose Which Plot Version (required)</legend>

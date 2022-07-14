@@ -20,8 +20,9 @@
 }
 
 #fieldset-plot {
-  margin-top: 5px;
+  margin-top: 25px;
   background-color: whitesmoke;
+  padding: 20px;
 }
 
 #api_key {
@@ -44,8 +45,14 @@ label {
   margin-bottom: 20px;
 }
 
+#year {
+  margin-bottom: -2px;
+}
+
 span {
   font-size: 15px;
+  line-height: 5px;
+  margin-bottom: 10px;
 }
 
 #btn {
@@ -58,6 +65,6 @@ span {
   border-color: orange;
 }
 
-#api-input:invalid{
+/* #api-input:invalid{
   
-}
+} */
