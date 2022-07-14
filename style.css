@@ -68,6 +68,14 @@ span {
   text-decoration: underline;
 }
 
+input:valid {
+  background-color: lightgreen;
+}
+
+input:invalid {
+  background-color: lightcoral;
+}
+
 /* #api-input:invalid{
   
 } */
