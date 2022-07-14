@@ -8,16 +8,13 @@ let year_input = document.getElementById('year');
 
 let url = 'http://www.omdbapi.com/?i=tt3896198&apikey=';
 
-
-
-
-
-
 let btn = document.getElementById('btn');
 
-btn.addEventListener('click', function(){
-  fetch(url){
-
-  }
-
-})
+btn.addEventListener('click', function () {
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((err) => console.log(err));
+});
