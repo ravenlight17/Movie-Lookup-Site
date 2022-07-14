@@ -57,12 +57,15 @@ span {
 
 #btn {
   width: 125px;
-  height: 30px;
+  height: 40px;
   margin-top: 10px;
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+  color: white;
 }
 
 #btn:hover {
-  border-color: orange;
+  text-decoration: underline;
 }
 
 /* #api-input:invalid{
