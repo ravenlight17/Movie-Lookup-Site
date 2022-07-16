@@ -10,7 +10,7 @@
     <div class="container">
       <main>
         <fieldset id="fieldset-main" class="fieldset-grp">
-          <legend id="legend-main">Movie Lookup</legend>
+          <legend class="legend" id="legend-main">Movie Lookup</legend>
           <form
             method="GET"
             class="form"
@@ -30,17 +30,34 @@
               />
             </label>
 
-            <label for="title"
-              >Title: <span>(required)</span>
-              <input
-                type="text"
-                name="title"
-                id="title"
-                class="input-grp"
-                minlength="1"
-                required
-              />
-            </label>
+            <fieldset id="fieldset-title" class="fieldset-grp">
+              <legend class="legend" id="legend-titleIM">
+                Select Title or IMDB ID
+              </legend>
+              <label for="title">
+                Title:
+                <input
+                  type="radio"
+                  value="title"
+                  id="title"
+                  name="titleIM_choice"
+                  required
+                />
+              </label>
+              <div class="span-grp" id="div-title"></div>
+
+              <label for="imdb">
+                IMDB:
+                <input
+                  type="radio"
+                  value="imdb"
+                  id="imdb"
+                  name="titleIM_choice"
+                  required
+                />
+              </label>
+              <div class="div-grp" id="div-imdb"></div>
+            </fieldset>
 
             <label for="year">
               Year:
@@ -56,7 +73,9 @@
             <span id="year-span">Select year between 1928 and 2022</span>
 
             <fieldset id="fieldset-plot" class="fieldset-grp">
-              <legend>Choose Which Plot Version (required)</legend>
+              <legend class="legend" id="legent-plot">
+                Choose Which Plot Version (required)
+              </legend>
               <label for="short">
                 Short Plot:
                 <input
